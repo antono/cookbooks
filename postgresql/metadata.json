@@ -34,7 +34,7 @@
   },
   "attributes": {
     "postgresql\/dir": {
-      "default": "\/etc\/postgresql\/8.3\/main",
+      "default": "\/etc\/postgresql\/8.4\/main",
       "type": "string",
       "multiple_values": false,
       "description": "Location of the PostgreSQL databases",

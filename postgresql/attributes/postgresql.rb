@@ -17,11 +17,13 @@
 # limitations under the License.
 #
 
+set_unless.version('8.4')
+
 case platform
 when "redhat","centos","fedora","suse"
   set[:postgresql][:dir]     = "/var/lib/pgsql/data"
 when "debian","ubuntu"
-  set[:postgresql][:dir]     = "/etc/postgresql/8.3/main"
+  set[:postgresql][:dir]     = "/etc/postgresql/#{version}/main"
 else
-  set[:postgresql][:dir]     = "/etc/postgresql/8.3/main"
+  set[:postgresql][:dir]     = "/etc/postgresql/#{version}/main"
 end
